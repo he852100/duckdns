@@ -1,0 +1,12 @@
+[[edge_functions]]
+  function = "duckdns"
+  path = "/duck/*"
+
+[build]
+  publish = "."
+
+
+[[headers]]
+  for = "/duck/*"
+  [headers.values]
+    Cache-Control = "no-store"
